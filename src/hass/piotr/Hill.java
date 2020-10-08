@@ -1,51 +1,43 @@
 package hass.piotr;
 
-public class Hill implements Comparable<Hill> {
+public class Hill {
 
+    //Fields
     private double doBIHNumber;
     private String name;
     private double heightFeet;
     private String gridRef;
     private String type;
 
-
+    //Constructor
     public Hill(double doBIHNumber, String name, double heightFeet, String gridRef, String type) {
-        doBIHNumber = doBIHNumber;
+        this.doBIHNumber = doBIHNumber;
         this.name = name;
         this.heightFeet = heightFeet;
-        gridRef = gridRef;
+        this.gridRef = gridRef;
         this.type = type;
     }
-
+    //Returns doBIHNumber variable
     public double getDoBIHNumber() {
         return doBIHNumber;
     }
-
+    //Returns name variable
     public String getName() {
         return name;
     }
-
+    //Returns heightFeet variable
     public double getHeightFeet() {
         return heightFeet;
     }
-
+    //Returns type variable
     public String getType() {
         return type;
     }
-
+    //Returns gridRef variable
     public String getGridRef() {
         return gridRef;
     }
-
-    @Override
-    public int compareTo(Hill o) {
-        if(this.heightFeet == o.heightFeet){
-            return this.name.compareTo(o.name);
-        }else {
-            return (o.heightFeet - this.heightFeet) > 0 ? 1 : -1;
-        }
-    }
-
+    //Returns a Hill Object with parameters
     @Override
     public String toString() {
         return "Hill{" +
