@@ -6,7 +6,7 @@ public class MunroMain {
 
     /*File path to the munro_data_changed.
     Please use the changed csv file and change the variable path to the correct location.*/
-    public static final String filePath = "C:\\Users\\piotr\\IdeaProjects\\javamasterclass\\MunroLib\\src\\hass\\piotr\\munro_data_changed.csv";
+    public static final String filePath = "\\C:\\Users\\piotr\\IdeaProjects\\javamasterclass\\MunroLib\\Munro DataSet\\munro_data_changed.csv";
 
     public static void main(String[] args) throws IOException {
 
